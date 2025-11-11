@@ -15,7 +15,7 @@ namespace CoffeeHouseABC
 
         // 🔹 Cho phép null để tránh CS8618
         private UC_Menu? _ucMenu;
-        private UC_PurchaseHistory? _ucHistory;
+        
 
         private List<ChiTietDonHang> _gioHang = new();
         private List<string> _tenSP = new();
@@ -131,7 +131,7 @@ namespace CoffeeHouseABC
             }
             else
             {
-                guna2Panel3.Width = 250;
+                guna2Panel3.Width = 322;
                 ExpandAllButtons();
                 isCollapsed = false;
             }
