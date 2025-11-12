@@ -121,6 +121,11 @@ namespace CoffeeHouseABC
             }
         }
 
+        private void btnAccManage_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new UC_AccountManage());
+        }
+
         // 🔹 Ẩn / hiện menu trái
         private void ToggleMenu()
         {
@@ -206,6 +211,11 @@ namespace CoffeeHouseABC
         }
 
         private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
 
         }

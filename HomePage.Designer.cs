@@ -33,8 +33,8 @@ namespace CoffeeHouseABC
             components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -47,10 +47,14 @@ namespace CoffeeHouseABC
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel2 = new Guna2Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             guna2HtmlLabel2 = new Guna2HtmlLabel();
@@ -138,13 +142,13 @@ namespace CoffeeHouseABC
             guna2Panel3.BorderThickness = 1;
             guna2Panel3.Controls.Add(flowLayoutPanel1);
             guna2Panel3.Controls.Add(btnDanhMuc);
-            guna2Panel3.CustomizableEdges = customizableEdges17;
+            guna2Panel3.CustomizableEdges = customizableEdges21;
             guna2Panel3.Dock = DockStyle.Left;
             guna2Panel3.FillColor = Color.White;
             guna2Panel3.Location = new Point(0, 107);
             guna2Panel3.Name = "guna2Panel3";
             guna2Panel3.Padding = new Padding(5);
-            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges22;
             guna2Panel3.Size = new Size(404, 926);
             guna2Panel3.TabIndex = 2;
             // 
@@ -156,6 +160,8 @@ namespace CoffeeHouseABC
             flowLayoutPanel1.Controls.Add(btnDanhGia);
             flowLayoutPanel1.Controls.Add(btnThongTinTaiKhoan);
             flowLayoutPanel1.Controls.Add(btnDangXuat);
+            flowLayoutPanel1.Controls.Add(btnStatistic);
+            flowLayoutPanel1.Controls.Add(btnAccountManage);
             flowLayoutPanel1.Dock = DockStyle.Top;
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(5, 61);
@@ -356,7 +362,7 @@ namespace CoffeeHouseABC
             btnDanhMuc.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             btnDanhMuc.CustomImages.Image = Properties.Resources.taskbar;
             btnDanhMuc.CustomImages.ImageAlign = HorizontalAlignment.Left;
-            btnDanhMuc.CustomizableEdges = customizableEdges15;
+            btnDanhMuc.CustomizableEdges = customizableEdges19;
             btnDanhMuc.DisabledState.BorderColor = Color.DarkGray;
             btnDanhMuc.DisabledState.CustomBorderColor = Color.DarkGray;
             btnDanhMuc.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -367,7 +373,7 @@ namespace CoffeeHouseABC
             btnDanhMuc.ForeColor = Color.DimGray;
             btnDanhMuc.Location = new Point(5, 5);
             btnDanhMuc.Name = "btnDanhMuc";
-            btnDanhMuc.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnDanhMuc.ShadowDecoration.CustomizableEdges = customizableEdges20;
             btnDanhMuc.Size = new Size(394, 56);
             btnDanhMuc.TabIndex = 6;
             btnDanhMuc.Text = "Danh mục";
@@ -380,7 +386,7 @@ namespace CoffeeHouseABC
             panelContainer.FillColor = Color.White;
             panelContainer.Location = new Point(404, 107);
             panelContainer.Name = "panelContainer";
-            panelContainer.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            panelContainer.ShadowDecoration.CustomizableEdges = customizableEdges24;
             panelContainer.Size = new Size(1498, 926);
             panelContainer.TabIndex = 3;
             panelContainer.Paint += panelContainer_Paint;
