@@ -36,7 +36,7 @@
             panelList.Margin = new Padding(0);
             panelList.Name = "panelList";
             panelList.Padding = new Padding(50, 15, 50, 15);
-            panelList.Size = new Size(1580, 754);
+            panelList.Size = new Size(1580, 670);
             panelList.TabIndex = 0;
             // 
             // lblTongTien
@@ -85,7 +85,6 @@
             // UC_Order
             // 
             BackColor = Color.White;
-            
             Controls.Add(panelList);
             Controls.Add(guna2Panel1);
             Name = "UC_Order";

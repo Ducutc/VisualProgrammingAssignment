@@ -126,6 +126,11 @@ namespace CoffeeHouseABC
             LoadUserControl(new UC_AccountManage());
         }
 
+        private void btnStatistic_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new UC_Statistic());
+        }
+
         // 🔹 Ẩn / hiện menu trái
         private void ToggleMenu()
         {
@@ -203,21 +208,6 @@ namespace CoffeeHouseABC
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();  // Đảm bảo thoát hoàn toàn chương trình
-        }
-
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

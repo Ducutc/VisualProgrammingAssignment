@@ -47,14 +47,13 @@ namespace CoffeeHouseABC
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel2 = new Guna2Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             guna2HtmlLabel2 = new Guna2HtmlLabel();
@@ -69,8 +68,11 @@ namespace CoffeeHouseABC
             btnDanhGia = new Guna2Button();
             btnThongTinTaiKhoan = new Guna2Button();
             btnDangXuat = new Guna2Button();
+            btnStatistic = new Guna2Button();
+            btnAccManage = new Guna2Button();
             btnDanhMuc = new Guna2Button();
             panelContainer = new Guna2Panel();
+            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             guna2Panel2.SuspendLayout();
             guna2Panel3.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
@@ -109,13 +111,12 @@ namespace CoffeeHouseABC
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold);
             guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(0, 60);
+            guna2HtmlLabel2.Location = new Point(0, 63);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(1887, 47);
             guna2HtmlLabel2.TabIndex = 1;
             guna2HtmlLabel2.Text = "ABC uống là mê";
             guna2HtmlLabel2.TextAlignment = ContentAlignment.MiddleCenter;
-            guna2HtmlLabel2.Click += guna2HtmlLabel2_Click;
             // 
             // guna2HtmlLabel1
             // 
@@ -161,7 +162,7 @@ namespace CoffeeHouseABC
             flowLayoutPanel1.Controls.Add(btnThongTinTaiKhoan);
             flowLayoutPanel1.Controls.Add(btnDangXuat);
             flowLayoutPanel1.Controls.Add(btnStatistic);
-            flowLayoutPanel1.Controls.Add(btnAccountManage);
+            flowLayoutPanel1.Controls.Add(btnAccManage);
             flowLayoutPanel1.Dock = DockStyle.Top;
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(5, 61);
@@ -298,7 +299,6 @@ namespace CoffeeHouseABC
             btnThongTinTaiKhoan.Animated = true;
             btnThongTinTaiKhoan.BorderRadius = 30;
             btnThongTinTaiKhoan.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            
             btnThongTinTaiKhoan.CustomImages.Image = Properties.Resources.account;
             btnThongTinTaiKhoan.CustomImages.ImageAlign = HorizontalAlignment.Left;
             btnThongTinTaiKhoan.CustomImages.ImageSize = new Size(30, 30);
@@ -329,7 +329,6 @@ namespace CoffeeHouseABC
             btnDangXuat.Animated = true;
             btnDangXuat.BorderRadius = 30;
             btnDangXuat.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            
             btnDangXuat.CustomImages.Image = Properties.Resources.logout;
             btnDangXuat.CustomImages.ImageAlign = HorizontalAlignment.Left;
             btnDangXuat.CustomImages.ImageSize = new Size(30, 30);
@@ -354,6 +353,66 @@ namespace CoffeeHouseABC
             btnDangXuat.TextAlign = HorizontalAlignment.Left;
             btnDangXuat.TextOffset = new Point(45, 0);
             btnDangXuat.Click += btnDangXuat_Click_1;
+            // 
+            // btnStatistic
+            // 
+            btnStatistic.Animated = true;
+            btnStatistic.BorderRadius = 30;
+            btnStatistic.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnStatistic.CustomImages.Image = Properties.Resources.icon_chart;
+            btnStatistic.CustomImages.ImageAlign = HorizontalAlignment.Left;
+            btnStatistic.CustomImages.ImageSize = new Size(30, 30);
+            btnStatistic.CustomizableEdges = customizableEdges15;
+            btnStatistic.DisabledState.BorderColor = Color.DarkGray;
+            btnStatistic.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnStatistic.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnStatistic.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnStatistic.FillColor = Color.FromArgb(250, 250, 250);
+            btnStatistic.Font = new Font("Segoe UI", 9F);
+            btnStatistic.ForeColor = Color.DimGray;
+            btnStatistic.HoverState.FillColor = Color.FromArgb(178, 101, 44);
+            btnStatistic.HoverState.Font = new Font("Segoe UI", 10F);
+            btnStatistic.HoverState.ForeColor = Color.White;
+            btnStatistic.Location = new Point(20, 546);
+            btnStatistic.Margin = new Padding(10, 20, 10, 10);
+            btnStatistic.Name = "btnStatistic";
+            btnStatistic.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnStatistic.Size = new Size(351, 56);
+            btnStatistic.TabIndex = 6;
+            btnStatistic.Text = "Thống kê bán hàng";
+            btnStatistic.TextAlign = HorizontalAlignment.Left;
+            btnStatistic.TextOffset = new Point(45, 0);
+            btnStatistic.Click += btnStatistic_Click;
+            // 
+            // btnAccManage
+            // 
+            btnAccManage.Animated = true;
+            btnAccManage.BorderRadius = 30;
+            btnAccManage.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnAccManage.CustomImages.Image = Properties.Resources.account;
+            btnAccManage.CustomImages.ImageAlign = HorizontalAlignment.Left;
+            btnAccManage.CustomImages.ImageSize = new Size(30, 30);
+            btnAccManage.CustomizableEdges = customizableEdges17;
+            btnAccManage.DisabledState.BorderColor = Color.DarkGray;
+            btnAccManage.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAccManage.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAccManage.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAccManage.FillColor = Color.FromArgb(250, 250, 250);
+            btnAccManage.Font = new Font("Segoe UI", 9F);
+            btnAccManage.ForeColor = Color.DimGray;
+            btnAccManage.HoverState.FillColor = Color.FromArgb(178, 101, 44);
+            btnAccManage.HoverState.Font = new Font("Segoe UI", 10F);
+            btnAccManage.HoverState.ForeColor = Color.White;
+            btnAccManage.Location = new Point(20, 632);
+            btnAccManage.Margin = new Padding(10, 20, 10, 10);
+            btnAccManage.Name = "btnAccManage";
+            btnAccManage.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnAccManage.Size = new Size(351, 56);
+            btnAccManage.TabIndex = 7;
+            btnAccManage.Text = "Quản lý tài khoản";
+            btnAccManage.TextAlign = HorizontalAlignment.Left;
+            btnAccManage.TextOffset = new Point(45, 0);
+            btnAccManage.Click += btnAccManage_Click;
             // 
             // btnDanhMuc
             // 
@@ -386,10 +445,14 @@ namespace CoffeeHouseABC
             panelContainer.FillColor = Color.White;
             panelContainer.Location = new Point(404, 107);
             panelContainer.Name = "panelContainer";
-            panelContainer.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            panelContainer.ShadowDecoration.CustomizableEdges = customizableEdges23;
             panelContainer.Size = new Size(1498, 926);
             panelContainer.TabIndex = 3;
-            panelContainer.Paint += panelContainer_Paint;
+            // 
+            // sqlCommand1
+            // 
+            sqlCommand1.CommandTimeout = 30;
+            sqlCommand1.EnableOptimizedParameterBinding = false;
             // 
             // HomePage
             // 
@@ -428,6 +491,9 @@ namespace CoffeeHouseABC
         private Guna2HtmlLabel guna2HtmlLabel2;
         private FlowLayoutPanel flowLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel1;
+        private Guna2Button btnStatistic;
+        private Guna2Button btnAccManage;
+        private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
     }
 
 }
