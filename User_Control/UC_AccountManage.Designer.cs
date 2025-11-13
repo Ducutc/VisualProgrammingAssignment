@@ -104,7 +104,7 @@
             lblAdd.BorderStyle = BorderStyle.FixedSingle;
             lblAdd.Dock = DockStyle.Left;
             lblAdd.Font = new Font("Segoe UI", 14F);
-            lblAdd.Image = Properties.Resources.icon_add1;
+            lblAdd.Image = Properties.Resources.icon_add;
             lblAdd.ImageAlign = ContentAlignment.MiddleLeft;
             lblAdd.Location = new Point(0, 0);
             lblAdd.Margin = new Padding(7, 0, 7, 0);

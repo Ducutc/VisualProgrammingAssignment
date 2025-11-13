@@ -22,7 +22,7 @@ namespace CoffeeHouseABC.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace CoffeeHouseABC.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CoffeeHouseABC.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace CoffeeHouseABC.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap account {
+        public static System.Drawing.Bitmap account {
             get {
                 object obj = ResourceManager.GetObject("account", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap accountw {
+        public static System.Drawing.Bitmap accountw {
             get {
                 object obj = ResourceManager.GetObject("accountw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bacxiu {
+        public static System.Drawing.Bitmap bacxiu {
             get {
                 object obj = ResourceManager.GetObject("bacxiu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap calendar {
+        public static System.Drawing.Bitmap calendar {
             get {
                 object obj = ResourceManager.GetObject("calendar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cam {
+        public static System.Drawing.Bitmap cam {
             get {
                 object obj = ResourceManager.GetObject("cam", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cfcotdua {
+        public static System.Drawing.Bitmap cfcotdua {
             get {
                 object obj = ResourceManager.GetObject("cfcotdua", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,17 +123,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cfden {
-            get {
-                object obj = ResourceManager.GetObject("cfden", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap cfnau {
+        public static System.Drawing.Bitmap cfnau {
             get {
                 object obj = ResourceManager.GetObject("cfnau", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +133,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cfsuada {
+        public static System.Drawing.Bitmap cfsuada {
             get {
                 object obj = ResourceManager.GetObject("cfsuada", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +143,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cftrung {
+        public static System.Drawing.Bitmap cftrung {
             get {
                 object obj = ResourceManager.GetObject("cftrung", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,17 +153,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap chanhleo {
-            get {
-                object obj = ResourceManager.GetObject("chanhleo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap cheesecake {
+        public static System.Drawing.Bitmap cheesecake {
             get {
                 object obj = ResourceManager.GetObject("cheesecake", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +163,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap coffee {
+        public static System.Drawing.Bitmap coffee {
             get {
                 object obj = ResourceManager.GetObject("coffee", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +173,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Coffeebaner {
+        public static System.Drawing.Bitmap Coffeebaner {
             get {
                 object obj = ResourceManager.GetObject("Coffeebaner", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +183,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap default_image {
+        public static System.Drawing.Bitmap default_image {
             get {
                 object obj = ResourceManager.GetObject("default_image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +193,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap delete {
+        public static System.Drawing.Bitmap delete {
             get {
                 object obj = ResourceManager.GetObject("delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +203,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap duahau {
+        public static System.Drawing.Bitmap duahau {
             get {
                 object obj = ResourceManager.GetObject("duahau", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +213,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_add {
+        public static System.Drawing.Bitmap icon_add {
             get {
                 object obj = ResourceManager.GetObject("icon_add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,17 +223,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_add1 {
-            get {
-                object obj = ResourceManager.GetObject("icon_add1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon_bill {
+        public static System.Drawing.Bitmap icon_bill {
             get {
                 object obj = ResourceManager.GetObject("icon_bill", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,17 +233,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_bill1 {
-            get {
-                object obj = ResourceManager.GetObject("icon_bill1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon_cart {
+        public static System.Drawing.Bitmap icon_cart {
             get {
                 object obj = ResourceManager.GetObject("icon_cart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +243,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_chart {
+        public static System.Drawing.Bitmap icon_chart {
             get {
                 object obj = ResourceManager.GetObject("icon_chart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,7 +253,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_delete {
+        public static System.Drawing.Bitmap icon_delete {
             get {
                 object obj = ResourceManager.GetObject("icon_delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -303,7 +263,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_edit {
+        public static System.Drawing.Bitmap icon_edit {
             get {
                 object obj = ResourceManager.GetObject("icon_edit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -313,7 +273,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_interest {
+        public static System.Drawing.Bitmap icon_interest {
             get {
                 object obj = ResourceManager.GetObject("icon_interest", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -323,7 +283,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_money {
+        public static System.Drawing.Bitmap icon_money {
             get {
                 object obj = ResourceManager.GetObject("icon_money", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -333,17 +293,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_money1 {
-            get {
-                object obj = ResourceManager.GetObject("icon_money1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logout {
+        public static System.Drawing.Bitmap logout {
             get {
                 object obj = ResourceManager.GetObject("logout", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -353,7 +303,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap matcha {
+        public static System.Drawing.Bitmap matcha {
             get {
                 object obj = ResourceManager.GetObject("matcha", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -363,7 +313,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Menushop {
+        public static System.Drawing.Bitmap Menushop {
             get {
                 object obj = ResourceManager.GetObject("Menushop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -373,7 +323,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap menuw {
+        public static System.Drawing.Bitmap menuw {
             get {
                 object obj = ResourceManager.GetObject("menuw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -383,7 +333,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap send {
+        public static System.Drawing.Bitmap send {
             get {
                 object obj = ResourceManager.GetObject("send", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -393,7 +343,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap star {
+        public static System.Drawing.Bitmap star {
             get {
                 object obj = ResourceManager.GetObject("star", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -403,7 +353,7 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap suachuahoaqua {
+        public static System.Drawing.Bitmap suachuahoaqua {
             get {
                 object obj = ResourceManager.GetObject("suachuahoaqua", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -413,19 +363,9 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap taskbar {
+        public static System.Drawing.Bitmap taskbar {
             get {
                 object obj = ResourceManager.GetObject("taskbar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tradao {
-            get {
-                object obj = ResourceManager.GetObject("tradao", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

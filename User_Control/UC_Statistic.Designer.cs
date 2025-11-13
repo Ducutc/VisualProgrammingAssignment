@@ -150,7 +150,7 @@
             // label3
             // 
             label3.Dock = DockStyle.Left;
-            label3.Image = Properties.Resources.icon_bill1;
+            label3.Image = Properties.Resources.icon_bill;
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
             label3.Size = new Size(94, 106);
@@ -192,7 +192,7 @@
             // label7
             // 
             label7.Dock = DockStyle.Left;
-            label7.Image = Properties.Resources.icon_money1;
+            label7.Image = Properties.Resources.icon_money;
             label7.Location = new Point(0, 0);
             label7.Name = "label7";
             label7.Size = new Size(94, 106);
@@ -367,6 +367,7 @@
             Controls.Add(flowLayoutPanel1);
             Name = "UC_Statistic";
             Size = new Size(1449, 787);
+            Load += UC_Statistic_Load;
             flowLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);

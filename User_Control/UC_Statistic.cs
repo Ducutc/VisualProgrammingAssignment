@@ -84,6 +84,7 @@ namespace CoffeeHouseABC.User_Control
             string ngayKetThuc = dtpEndDate.Value.ToString("yyyy-MM-dd");
             string sql = "select NgayLap, Sum(ct.SoLuong) as SoLuong from DONHANG dh join CHITIETDONHANG ct on dh.MaHD = ct.MaHD where NgayLap between '" + ngayBatDau + "' and '" + ngayKetThuc + "' group by NgayLap ";
             DataTable dt = DataProcess.ReadTable(sql);
+            gunaBarDataset.DataPoints.Clear();
             foreach (DataRow row in dt.Rows)
             {
                 string ngayLap = Convert.ToDateTime(row["NgayLap"]).ToString("dd/MM/yyyy");
